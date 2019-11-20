@@ -5,6 +5,6 @@
 **For more detail [Docker Page](https://www.docker.com)**
 
 ## To verify docker is installed or not run
- `# docker -version`
+ `# docker --version`
 
 
