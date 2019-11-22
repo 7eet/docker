@@ -7,4 +7,9 @@
 ## To verify docker is installed or not run
  `# docker --version`
 
+## List all **running** containers
+ `# docker ps`  **OR**  `#docker container ls`
+
+## List all container which are in **created** or **exited** state
+ `# docker ps -a`  **OR**  `# docker container ls -a`
 
