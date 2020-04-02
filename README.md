@@ -48,6 +48,18 @@ _eg:_
 
 ## Inside the container
 _Now we are creating a file inside alpine container_
+```# docker container run -it alpine /bin/ash```
+
+_/bin/ash is a type of shell in alpine_ <br>
+`-it is a flag for interactice terminal`
+
+ - _After that command you will see something like this_ `/ #` _this is a prompt of /bin/ash shell, run some basic  commands of linux like ls, cd, .._
+
+ - _Now create a file inside this container and name it as iso.txt_
+ - _Then type_ `exit`
+
+
+
 
 
 
