@@ -50,8 +50,8 @@ _eg:_
 1. Now we are creating a file inside alpine container_
 ```$ docker container run -it alpine /bin/ash```
 
-_/bin/ash is a type of shell in alpine_ <br>
-`-it is a flag for interactice terminal`
+  _/bin/ash is a type of shell in alpine_ <br>
+  `-it is a flag for interactice terminal`
 
  - _After that command you will see something like this_ `/ #` _this is a prompt of /bin/ash shell, run some basic  commands of linux like ls, cd, .._
 
@@ -61,31 +61,31 @@ _/bin/ash is a type of shell in alpine_ <br>
  - _run_ `docker container ls -a` _, then copy the Container-ID of latest alpine container in a editor or somewhere else._
 
 2. Viewing the file
-_Follow the below steps:_
+  _Follow the below steps:_
 ```
   $ docker container run -it alpine /bin/ash
   / # ls 
 ```
 
-_Yup, It does not display the file that we have created Right?_
+  _Yup, It does not display the file that we have created Right?_
 
-_Open a new terminal and run the following command:_
+  _Open a new terminal and run the following command:_
 
 ```
  $ docker container start <paste-here-container-id>
 ```
 
-_List the running containers_
+  _List the running containers_
 
 ```
   $ docker container ls 
 ```
-_Run ls command on that container_
+  _Run ls command on that container_
 
 ```
   $ docker container exec <container-id> ls
 ```
-_Here you will definately see the file that we have created._
+  _Here you will definately see the file that we have created._
 
 **This is called as container isolation. When you run a image, it creates a new container(say object).**<br>
 **So each container has a seperate filesystem. When we create a file in a container and exited that. It is in stop state.**<br>
