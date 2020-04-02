@@ -51,7 +51,7 @@ _[Learn docker](https://training.play-with-docker.com)_
    ```
 
 ## Inside the container
-1. _Now we are creating a file inside alpine container_
+1. _Now we are creating a file inside alpine container_<br>
   ```$ docker container run -it alpine /bin/ash```
 
   _/bin/ash is a type of shell in alpine_ <br>
