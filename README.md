@@ -97,3 +97,21 @@ _[Learn docker](https://training.play-with-docker.com)_
   **Like in java, let say we have created a class Bicycle. Then we are instantiating two objects of a bicycle. So these two are different from each other. The one does not know what other do and vice-versa.**<br>
   **In a docker this is called a container isolation.**<br>
   **For understanding say image as a class and container as a object.**<br>
+
+
+## Stop the running container
+ ```
+  $ docker stop <container-id>
+ ```
+ **run** `docker ps` **command and copy the container id**
+
+
+ ```
+  $ docker stop <conatiner-name>
+ ```
+
+## Start the container
+ ```
+  $ docker start <container-id>
+ ```
+ **run** `docker ps -a` **command and copy the container id**
